@@ -19,7 +19,6 @@ $(document).ready(function () {
   });
   // iterate over locations
   $("td.seller_info ul li").each(function () {
-    alert($(this).text());
     if ($(this).text().indexOf('United States') == -1 && $(this).text().indexOf('Ships From') > -1)
     {
       // Not shipping from the US
