@@ -9,11 +9,20 @@
 // @grant        none
 // ==/UserScript==
 $(document).ready(function () {
-  // iterate over items
+  // iterate over conditions
   $('span.item_media_condition').each(function () {
     if ($(this).text().indexOf('Very') == -1 && $(this).text().indexOf('Mint') == -1)
     {
       // Not VG, NM or M --- so we hide
+      $(this).closest('tr').hide();
+    }
+  });
+  // iterate over locations
+  $("td.seller_info ul li").each(function () {
+    alert($(this).text());
+    if ($(this).text().indexOf('United States') == -1 && $(this).text().indexOf('Ships From') > -1)
+    {
+      // Not shipping from the US
       $(this).closest('tr').hide();
     }
   });
