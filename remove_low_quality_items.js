@@ -3,7 +3,7 @@
 // @name         Remove low quality items
 // @namespace    http://discogs.com/
 // @version      0.1
-// @description  Removes < VG from displayed items for sale
+// @description  Removes low qual from displayed items for sale
 // @author       Joey Liechty
 // @match        https://www.discogs.com/sell/mywants*
 // @grant        none
